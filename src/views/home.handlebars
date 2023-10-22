@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1 style="margin-top: 60px">Bienvenido al desafio de la clase 8/Segunda Pre Entrega</h1>
+  <div class="container">
+    {{#if listProds}}
+      <h2>Lista de productos</h2>
+      {{#each listProds}}
+        <div class="container">
+          <h3>{{this.title}}</h3>
+          <p>Id:
+            {{this._id}}
+            || Código:
+            {{this.code}}
+            || Categoría:
+            {{this.category}}</p>
+          <p>Imagen: {{this.thumbnail}}</p>
+          <p>Descripción: {{this.description}}</p>
+          <p>Stock: {{this.stock}} unidades || Precio: ${{this.price}}</p>
+        </div>
+      {{/each}}
+    {{else}}
+      <h2>No hay productos para mostrar</h2>
+    {{/if}}
+  </div>
+</div>

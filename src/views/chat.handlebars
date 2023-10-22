@@ -1,0 +1,26 @@
+<div class="container"><h1 style="margin-top: 60px">Chat con Websocket</h1>
+
+  <form class="container m-3" id="formNewMessage">
+    <h2>Enviar nuevo mensaje</h2>
+    <div class="row mb-3">
+      <label for="email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text" required class="form-control" name="email" />
+      </div>
+      <label for="message" class="col-sm-2 col-form-label">Mensaje</label>
+      <div class="col-sm-10">
+        <input type="text" required class="form-control" name="message" />
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      id="sendMessage"
+    >Enviar</button>
+  </form>
+
+  <div class="container" id="showMessages">
+    <div id="listMessages"></div>
+  </div>
+</div>
